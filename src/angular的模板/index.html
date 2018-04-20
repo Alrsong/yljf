@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<title></title>
+	<link href="css/base.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+	<style>
+	.page.ng-enter {
+        transition:0.5s cubic-bezier(0.55, 0.06, 0.68, 0.19) all;
+        opacity:0;
+    }
+    .page.ng-enter.ng-enter-active{
+        opacity:1;
+    }
+	</style>
+</head>
+<body ng-controller="home">
+	<!--公用模板 -->
+	<div ng-include="'template/public.html'"></div>
+    <div class="page" style="height: 100%" ng-view></div>
+    <!--jq-->
+	<script type="text/javascript" src="js/jquery.2.2.1.js"></script>
+	<script src="js/jquery.cookie.min.js"></script>
+	<!--angular-->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-cookies.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/angular-touch.min.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<!--引入和自己写的-->
+    <script src="js/router.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

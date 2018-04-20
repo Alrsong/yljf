@@ -1,0 +1,65 @@
+<div class="h44"></div>
+<div class="nav">
+	<a href="javascript:history.go(-1);" class="nav-l"></a>
+	<a href="javascript:;" class="nav-r3"></a>
+	<span class="nav-c">签到</span>
+</div>
+<div class="qd-top">
+	<div class="tips"><a href="" class="jf">积分总额：<span class="orange">195</span></a><a href="" class="qd">签到规则</a></div>
+	<div class="series">已连续签到<span>8</span></div>
+</div>
+<div class="date-tit">
+	<p>
+		<span class="left" ng-click="getday(month>1?year:year-1,month>1?month-1:12)"></span>
+		<span class="right" ng-click="getday(month==12?year+1:year,month==12?1:month*1+1*1)"></span>
+		<span class="time">{{year}}年{{month}}月</span>
+	</p>
+</div>
+<div class="date-box">
+	<p class="tit"><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span></p>
+	<ul>
+		<li ng-repeat="t in tbox">{{t>0?t:''}}</li>
+	</ul>
+</div>
+
+<div class="qdgz-tck">
+	<i></i>
+	<div class="qdgz-content">
+		<p class="tit">签到规则</p>
+		<p class="img"><img src="images/qdgz.png"></p>
+		<p class="txt">每日签到：奖励5积分<br>当月连续签到：<br>7天：额外奖励20积分<br>15天：额外奖励30积分<br>30天：额外奖励40积分</p>
+		<p class="btn">
+			<a href="javascript:;">关闭</a>
+		</p>
+	</div>
+</div>
+
+<div class="tck" hidden>
+	<i></i>
+	<div class="tck-txt">
+		<p class="txt">签到成功，获得5积分</p>
+		<p class="btn"><a href="javascript:;" class="orange">确定</a></p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('.qd-top .qd').click(function(){
+		$('.qdgz-tck').addClass('act')
+	})
+	$('.qdgz-tck .btn a').click(function(){
+		$('.qdgz-tck').removeClass('act')
+	})
+
+	// function getday(year,month){
+	// 	var date=year+'-'+month+'-1';//当月第一天
+	// 	var mydate = new Date(date);
+	// 	var week=mydate.getDay(); //获取当月第一天是 星期X(0-6,0代表星期天)
+	// 	console.log(week)
+	// 	var m = parseInt(month, 10);  
+ //  		var d= new Date(year, month, 0); 
+ //  		var daynum=d.getDate();//获取当月有几天
+ //  		console.log(daynum)
+	// }
+	// getday(2017,8);
+
+</script>

@@ -8,7 +8,8 @@
 	  <div class="swiper-pagination"></div>
 	</div>
 	<div class="home-item">
-		<a href="#/dqlc"><img src="../images/icon1.png"><span>定期理财</span></a>
+		<!-- <a href="#/dqlc"><img src="../images/icon1.png"><span>定期理财</span></a> -->
+		<a href="#/add"><img src="../images/icon1.png"><span>地址入口</span></a>
 		<a href="#/chanpin"><img src="../images/icon2.png"><span>基金</span></a>
 		<a href="#/qd"><img src="../images/icon3.png"><span>积分签到</span></a>
 		<a href="#/vip"><img src="../images/icon4.png"><span>会员中心</span></a>
