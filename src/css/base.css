@@ -1,0 +1,197 @@
+
+/********** 手机相关 **********/
+@CHARSET "UTF-8";
+*,p,div,ul,ol{
+	color:#333;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family:Hiragino Sans GB;
+	color: #333;
+}
+html,body{
+  font-size: 10px;
+}
+@media screen and (min-width: 319px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 359px) {
+  html,body{
+    font-size: 13px;
+  }
+
+}
+@media screen and (min-width: 374px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 410px) {
+  html,body{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 434px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 559px) {
+  html,
+  body {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 613px) {
+  html,body{
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 639px) {
+  html,
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 719px) {
+  html,
+  body {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 739px){
+  html,body{
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  html,
+  body {
+    font-size: 29px;
+  }
+}
+
+@media screen and (min-width: 819px){
+  html,body{
+    font-size: 31px;
+  }
+}
+@media screen and (min-width: 939px){
+  html,body{
+    font-size: 33px;
+  }
+}
+
+@media screen and (min-width: 959px) {
+  html,
+  body {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 979px){
+  html,body{
+    font-size: 38px;
+  }
+
+}
+@media screen and (min-width: 1079px) {
+  html,body{
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1241px){
+  html,body{
+    font-size: 46px;
+  }
+}
+.l{ float:left; display:inline;}
+.c{ margin:0 auto;display:block}
+.r{ float:right; display:inline;}
+/********** 页面相关 **********/
+// .wrapper{
+// 	max-width: 750px;
+// 	padding-bottom:70px;
+// 	margin:0 auto;
+// 	background-color:#fff;
+//     min-height:100%
+// }
+
+
+html{font-family:Hiragino Sans GB;min-height:100%}
+body{font-family:Hiragino Sans GB;min-height:100%}
+a{text-decoration:none;}
+li{list-style:none;}
+
+/*清除浮动*/
+.clear{clear:both}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+/*清楚a,button,input手机端的点击效果*/
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+/*简单的按钮效果*/
+input{outline:none;-webkit-appearance: none;border-radius:0px;font-family:Hiragino Sans GB;font-size: 1rem}
+button{outline:none;font-family: Hiragino Sans GB;font-size: 1.2rem}
+button:hover{opacity:0.9}
+button:active{opacity:1}
+input[type="button"]{outline:none;}
+input[type="button"]:hover{opacity:0.9;}
+input[type="button"]:active{opacity:1}
+
+/*去掉input[type="number"]的左右箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}
+/*处理checkbox和radio不对齐文本*/
+.checkbox {vertical-align:middle; margin-top:-2px; margin-bottom:1px;}
+.radio {vertical-align:middle; margin-top:-2px; margin-bottom:1px;}
+
+/*去掉苹果对textarea的默认样式*/
+textarea,select{-webkit-appearance: none;border-radius:0px;font-family:Hiragino Sans GB}
+/**/
+
+
+/*width*/
+
+/*文本溢出*/
+.wbyc{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+/*文本溢出2*/
+.wbyc2{overflow: hidden;display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all;}
+/*css3动画效果*/
+.t-linear{-webkit-transition:all linear 0.3s;-moz-transition:all linear 0.3s;-ms-transition:all linear 0.3s;-o-transition:all linear 0.3s;transition:all linear 0.3s;}
+/*旋转*/
+.xzsss{transform:rotate(7deg);-ms-transform:rotate(7deg);-moz-transform:rotate(7deg);-webkit-transform:rotate(7deg);-o-transform:rotate(7deg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
