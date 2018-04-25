@@ -154,17 +154,15 @@
 	      console.log(1)
 		  this.axios({
 		      method: 'post',
-		      url: 'https://rang.gxyayi.cn/index.php?g=applet&m=index&a=special',
+		      url: 'http://knsn.yinlaicaifu.com/api/WXApi/Configurations',
 		      data: {
-		        
+		        WeiXinConfType:1
 		      },
 		   }).then(function (response) {
-		    console.log(response);
+		    console.log(response.data);
 		  })
 		  .catch(function (error) {
-		  	console.log(122)
 		    console.log(error);
-		  	console.log(122)
 		  });
 	    }
 	  }
