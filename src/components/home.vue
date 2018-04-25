@@ -135,16 +135,15 @@
 	    return {
 	      loading: false,
 	      post: null,
-	      error: null
+	      error: null,
 	    }
 	  },
 	  created () {
 	    // 组件创建完后获取数据，
-	    // 此时 data 已经被 observed 了
+	    // 此时 data 已经被 observed了
 	    this.fetchData()
 	  },
 	  watch: {
-	    // 如果路由有变化，会再次执行该方法
 	    '$route': 'fetchData'
 	  },
 	  methods: {
@@ -153,6 +152,20 @@
 	      this.loading = true
 	      // replace getPost with your data fetching util / API wrapper
 	      console.log(1)
+		  this.axios({
+		      method: 'post',
+		      url: 'https://rang.gxyayi.cn/index.php?g=applet&m=index&a=special',
+		      data: {
+		        
+		      },
+		   }).then(function (response) {
+		    console.log(response);
+		  })
+		  .catch(function (error) {
+		  	console.log(122)
+		    console.log(error);
+		  	console.log(122)
+		  });
 	    }
 	  }
 	}
