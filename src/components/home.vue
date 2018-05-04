@@ -115,6 +115,24 @@
 		<a class="h-b-3of" href="#/help">新手帮助</a>
 		<a class="h-b-2of" href="">安全保障</a>
 	</div>
+	<!-- <div class="button-counter">
+		<button-counter title="全局组件"></button-counter>
+		<button-counter title="增加" unit="次"></button-counter>
+		<button-counter2 title="局部组件"></button-counter2>
+	</div> -->
+	<div class="button-counter">
+		<h4>循环</h4>
+		<button-counter v-for="list in buttonlist" v-bind="list"></button-counter>
+	</div>
+	<!-- <div id="blog-posts-events-demo">
+	  <div :style="{ fontSize: postFontSize + 'em' }">
+	    <blog-post
+	      v-for="post in posts"
+	      v-bind:key="post.id"
+	      v-bind:post="post"
+	    ></blog-post>
+	  </div>
+	</div> -->
 	<div class="end-box mt-15">
 		<span>我们是有底线的</span>
 	</div>
@@ -130,12 +148,23 @@
 </div>
 </template>
 <script type="text/javascript">
+
 	export default {
 	  data () {
 	    return {
 	      loading: false,
 	      post: null,
 	      error: null,
+	      buttonlist:[{
+	      	'title':'组件',
+	      	'unit':'次'
+	      },{
+	      	'title':'点了',
+	      	'unit':'次数'
+	      },{
+	      	'title':'点击',
+	      	'unit':'次了'
+	      }]
 	    }
 	  },
 	  created () {
@@ -165,6 +194,17 @@
 		    console.log(error);
 		  });
 	    }
-	  }
+	  },
+	  components: {//局部组件  全局组件在component.js
+	    'button-counter2': {
+		  data: function () {
+		    return {
+		      count: 0
+		    }
+		  },
+		  props: ['list'],
+		  template: '<button class="" v-on:click="count++">{{list.title}}:{{list.count}} {{unit}}</button>'
+		}
+	  },
 	}
 </script>

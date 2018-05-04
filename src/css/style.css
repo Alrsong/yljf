@@ -4471,3 +4471,14 @@
   -o-transform: rotate(-90deg);
   /* Opera */
 }
+/*button-counter*/
+.button-counter button {
+  background: #3283de;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  line-height: 40px;
+  margin: 10px;
+  padding: 5px 10px;
+}
